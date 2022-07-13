@@ -77,18 +77,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A73636C0287ECB60001DF3B2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A7E4285D287DFC1600B49458 /* VKMainScreen.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		A73636C1287ECB66001DF3B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7E42861287DFE8900B49458 /* VKAppRowCell.swift */,
+				A7B42C49287EF75C0056C7B2 /* Main */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,15 +92,6 @@
 				A7FCEA27287E11D500A959E0 /* VKApp.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A74E5781287E0114005F0231 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A74E5783287E013D005F0231 /* Managers */,
-				A7E42863287DFED900B49458 /* Extensions */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		A74E5782287E0118005F0231 /* Support */ = {
@@ -132,14 +115,37 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		A74E5784287E0145005F0231 /* Main */ = {
+		A7B42C47287EF6FB0056C7B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A73636C2287ECB6C001DF3B2 /* Models */,
-				A73636C1287ECB66001DF3B2 /* Views */,
-				A73636C0287ECB60001DF3B2 /* Controllers */,
+				A7B42C48287EF70C0056C7B2 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7B42C48287EF70C0056C7B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4285D287DFC1600B49458 /* VKMainScreen.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		A7B42C49287EF75C0056C7B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7E42861287DFE8900B49458 /* VKAppRowCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A7B42C4A287EF78D0056C7B2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A74E5783287E013D005F0231 /* Managers */,
+				A7E42863287DFED900B49458 /* Extensions */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A7E4283D287DFB9300B49458 = {
@@ -164,8 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				A74E5782287E0118005F0231 /* Support */,
-				A74E5781287E0114005F0231 /* Core */,
-				A74E5784287E0145005F0231 /* Main */,
+				A7B42C4A287EF78D0056C7B2 /* Helpers */,
+				A73636C2287ECB6C001DF3B2 /* Models */,
+				A73636C1287ECB66001DF3B2 /* Views */,
+				A7B42C47287EF6FB0056C7B2 /* Controllers */,
 				A7E42857287DFB9500B49458 /* Info.plist */,
 			);
 			path = SiriusVK;

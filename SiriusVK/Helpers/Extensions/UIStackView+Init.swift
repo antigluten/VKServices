@@ -12,7 +12,7 @@ extension UIStackView {
         self.init(frame: .zero)
         
         subviews.forEach {
-            addSubview($0)
+            addArrangedSubview($0)
         }
         
         self.axis = axis

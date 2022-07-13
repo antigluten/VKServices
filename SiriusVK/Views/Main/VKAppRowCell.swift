@@ -27,33 +27,21 @@ class VKAppRowCell: UITableViewCell {
             appIcon.heightAnchor.constraint(equalToConstant: 64)
         ])
         
-        let verticalStack = UIStackView(arrangedSubviews: [
+        let verticalStack = UIStackView(subviews: [
             appName, appDescription
-        ])
+        ], axis: .vertical)
         
-        verticalStack.axis = .vertical
         verticalStack.distribution = .fill
         
-        verticalStack.translatesAutoresizingMaskIntoConstraints = false
-        
-        let stackView = UIStackView(arrangedSubviews: [
+        let stackView = UIStackView(subviews: [
             appIcon, verticalStack
-        ])
-        
-        stackView.spacing = 16
-        stackView.axis = .horizontal
-        
-        stackView.distribution = .equalCentering
+        ], spacing: 16)
         
         stackView.distribution = .fill
-        
-        appIcon.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(stackView)
         
         let height: CGFloat = (80 - 64) / 2
-        
-        
         stackView.fillSuperview(padding: .init(top: height, left: 16, bottom: height, right: 50))
     }
     
