@@ -42,7 +42,7 @@ class VKAppRowCell: UITableViewCell {
         addSubview(stackView)
         
         let height: CGFloat = (80 - 64) / 2
-        stackView.fillSuperview(padding: .init(top: height, left: 16, bottom: height, right: 50))
+        stackView.fillSuperview(padding: .init(top: height, left: 16, bottom: height, right: 40))
     }
     
     required init?(coder: NSCoder) {

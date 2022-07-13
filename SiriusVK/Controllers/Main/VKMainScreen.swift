@@ -77,25 +77,15 @@ class VKMainScreen: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let urlSchemes = [
-            "vk",
-            "mygamesapp",
-            "vk7677811", // sferum
-            "youla",
-            "samokat",
-            "citydrive",
-            "ru.mail.cloud",
-            "vseapteki",
-            "ru.mail.calendar"
-        ]
-        
         let app = apps[indexPath.item]
         let application = UIApplication.shared
+        
+        let key = String(app.link.split(separator: "/")[1].prefix { $0 != "." })
 
-        let appUrl = URL(string: "\(urlSchemes[indexPath.item])://")
+        let appPath = Constants.appPaths[key]
         let safariURL = URL(string: app.link)
         
-        if let appUrl = appUrl, application.canOpenURL(appUrl)  {
+        if let appPath = appPath, let appUrl = URL(string: appPath), application.canOpenURL(appUrl)  {
             application.open(appUrl)
         } else {
             if let safariURL = safariURL {
