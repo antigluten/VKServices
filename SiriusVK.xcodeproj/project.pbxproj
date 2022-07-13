@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74E5786287E0360005F0231 /* UIStackView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5785287E0360005F0231 /* UIStackView+Init.swift */; };
+		A74E5788287E03EB005F0231 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5787287E03EB005F0231 /* UIView+Layout.swift */; };
+		A74E578A287E075D005F0231 /* UILabel+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5789287E075D005F0231 /* UILabel+Init.swift */; };
 		A7E4284A287DFB9300B49458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E42849287DFB9300B49458 /* AppDelegate.swift */; };
 		A7E4284C287DFB9300B49458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4284B287DFB9300B49458 /* SceneDelegate.swift */; };
-		A7E4284E287DFB9300B49458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4284D287DFB9300B49458 /* ViewController.swift */; };
 		A7E42851287DFB9300B49458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E4284F287DFB9300B49458 /* Main.storyboard */; };
 		A7E42853287DFB9500B49458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E42852287DFB9500B49458 /* Assets.xcassets */; };
 		A7E42856287DFB9500B49458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E42854287DFB9500B49458 /* LaunchScreen.storyboard */; };
+		A7E4285E287DFC1600B49458 /* VKMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4285D287DFC1600B49458 /* VKMainScreen.swift */; };
+		A7E42860287DFC2200B49458 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4285F287DFC2200B49458 /* NetworkManager.swift */; };
+		A7E42862287DFE8900B49458 /* VKAppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E42861287DFE8900B49458 /* VKAppRowCell.swift */; };
+		A7E42865287DFEEB00B49458 /* UIImageView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E42864287DFEEB00B49458 /* UIImageView+Init.swift */; };
+		A7FCEA26287E10EB00A959E0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA25287E10EB00A959E0 /* Manager.swift */; };
+		A7FCEA28287E11D500A959E0 /* VKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA27287E11D500A959E0 /* VKApp.swift */; };
+		A7FCEA2A287E122B00A959E0 /* VKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA29287E122B00A959E0 /* VKRequest.swift */; };
+		E5D3D238DE8A97585AA559FF /* Pods_SiriusVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328B4C500E539F7DE4412181 /* Pods_SiriusVK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		328B4C500E539F7DE4412181 /* Pods_SiriusVK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiriusVK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D330701F7AE7EB2F71887F1 /* Pods-SiriusVK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriusVK.release.xcconfig"; path = "Target Support Files/Pods-SiriusVK/Pods-SiriusVK.release.xcconfig"; sourceTree = "<group>"; };
+		8372F2FAD97DBDC64D2E9350 /* Pods-SiriusVK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiriusVK.debug.xcconfig"; path = "Target Support Files/Pods-SiriusVK/Pods-SiriusVK.debug.xcconfig"; sourceTree = "<group>"; };
+		A74E5785287E0360005F0231 /* UIStackView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Init.swift"; sourceTree = "<group>"; };
+		A74E5787287E03EB005F0231 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		A74E5789287E075D005F0231 /* UILabel+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Init.swift"; sourceTree = "<group>"; };
 		A7E42846287DFB9300B49458 /* SiriusVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriusVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E42849287DFB9300B49458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E4284B287DFB9300B49458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7E4284D287DFB9300B49458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7E42850287DFB9300B49458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7E42852287DFB9500B49458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7E42855287DFB9500B49458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7E42857287DFB9500B49458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E4285D287DFC1600B49458 /* VKMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKMainScreen.swift; sourceTree = "<group>"; };
+		A7E4285F287DFC2200B49458 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A7E42861287DFE8900B49458 /* VKAppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAppRowCell.swift; sourceTree = "<group>"; };
+		A7E42864287DFEEB00B49458 /* UIImageView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Init.swift"; sourceTree = "<group>"; };
+		A7FCEA25287E10EB00A959E0 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		A7FCEA27287E11D500A959E0 /* VKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKApp.swift; sourceTree = "<group>"; };
+		A7FCEA29287E122B00A959E0 /* VKRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D3D238DE8A97585AA559FF /* Pods_SiriusVK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69C6C0788DFF54177D807293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				328B4C500E539F7DE4412181 /* Pods_SiriusVK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D629622561F7085FA4FD32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8372F2FAD97DBDC64D2E9350 /* Pods-SiriusVK.debug.xcconfig */,
+				6D330701F7AE7EB2F71887F1 /* Pods-SiriusVK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A74E5781287E0114005F0231 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A74E5783287E013D005F0231 /* Managers */,
+				A7E42863287DFED900B49458 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A74E5782287E0118005F0231 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A7E42849287DFB9300B49458 /* AppDelegate.swift */,
+				A7E4284B287DFB9300B49458 /* SceneDelegate.swift */,
+				A7E4284F287DFB9300B49458 /* Main.storyboard */,
+				A7E42854287DFB9500B49458 /* LaunchScreen.storyboard */,
+				A7E42852287DFB9500B49458 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A74E5783287E013D005F0231 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4285F287DFC2200B49458 /* NetworkManager.swift */,
+				A7FCEA25287E10EB00A959E0 /* Manager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A74E5784287E0145005F0231 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4285D287DFC1600B49458 /* VKMainScreen.swift */,
+				A7E42861287DFE8900B49458 /* VKAppRowCell.swift */,
+				A7FCEA27287E11D500A959E0 /* VKApp.swift */,
+				A7FCEA29287E122B00A959E0 /* VKRequest.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A7E4283D287DFB9300B49458 = {
 			isa = PBXGroup;
 			children = (
 				A7E42848287DFB9300B49458 /* SiriusVK */,
 				A7E42847287DFB9300B49458 /* Products */,
+				A6D629622561F7085FA4FD32 /* Pods */,
+				69C6C0788DFF54177D807293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +139,23 @@
 		A7E42848287DFB9300B49458 /* SiriusVK */ = {
 			isa = PBXGroup;
 			children = (
-				A7E42849287DFB9300B49458 /* AppDelegate.swift */,
-				A7E4284B287DFB9300B49458 /* SceneDelegate.swift */,
-				A7E4284D287DFB9300B49458 /* ViewController.swift */,
-				A7E4284F287DFB9300B49458 /* Main.storyboard */,
-				A7E42852287DFB9500B49458 /* Assets.xcassets */,
-				A7E42854287DFB9500B49458 /* LaunchScreen.storyboard */,
+				A74E5782287E0118005F0231 /* Support */,
+				A74E5781287E0114005F0231 /* Core */,
+				A74E5784287E0145005F0231 /* Main */,
 				A7E42857287DFB9500B49458 /* Info.plist */,
 			);
 			path = SiriusVK;
+			sourceTree = "<group>";
+		};
+		A7E42863287DFED900B49458 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7E42864287DFEEB00B49458 /* UIImageView+Init.swift */,
+				A74E5785287E0360005F0231 /* UIStackView+Init.swift */,
+				A74E5787287E03EB005F0231 /* UIView+Layout.swift */,
+				A74E5789287E075D005F0231 /* UILabel+Init.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7E4285A287DFB9500B49458 /* Build configuration list for PBXNativeTarget "SiriusVK" */;
 			buildPhases = (
+				C8B7B3498EC29ABB491BB687 /* [CP] Check Pods Manifest.lock */,
 				A7E42842287DFB9300B49458 /* Sources */,
 				A7E42843287DFB9300B49458 /* Frameworks */,
 				A7E42844287DFB9300B49458 /* Resources */,
+				6F1A9A8C36F2CB4C4D493C7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +226,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F1A9A8C36F2CB4C4D493C7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SiriusVK/Pods-SiriusVK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SiriusVK/Pods-SiriusVK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SiriusVK/Pods-SiriusVK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B7B3498EC29ABB491BB687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiriusVK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7E42842287DFB9300B49458 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E4284E287DFB9300B49458 /* ViewController.swift in Sources */,
 				A7E4284A287DFB9300B49458 /* AppDelegate.swift in Sources */,
+				A7E42862287DFE8900B49458 /* VKAppRowCell.swift in Sources */,
+				A74E578A287E075D005F0231 /* UILabel+Init.swift in Sources */,
+				A7E42860287DFC2200B49458 /* NetworkManager.swift in Sources */,
+				A7FCEA2A287E122B00A959E0 /* VKRequest.swift in Sources */,
+				A74E5786287E0360005F0231 /* UIStackView+Init.swift in Sources */,
+				A74E5788287E03EB005F0231 /* UIView+Layout.swift in Sources */,
+				A7E42865287DFEEB00B49458 /* UIImageView+Init.swift in Sources */,
 				A7E4284C287DFB9300B49458 /* SceneDelegate.swift in Sources */,
+				A7FCEA28287E11D500A959E0 /* VKApp.swift in Sources */,
+				A7E4285E287DFC1600B49458 /* VKMainScreen.swift in Sources */,
+				A7FCEA26287E10EB00A959E0 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +426,7 @@
 		};
 		A7E4285B287DFB9500B49458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8372F2FAD97DBDC64D2E9350 /* Pods-SiriusVK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +437,6 @@
 				INFOPLIST_FILE = SiriusVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +454,7 @@
 		};
 		A7E4285C287DFB9500B49458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D330701F7AE7EB2F71887F1 /* Pods-SiriusVK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +465,6 @@
 				INFOPLIST_FILE = SiriusVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

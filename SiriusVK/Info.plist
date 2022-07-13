@@ -15,11 +15,21 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vseapteki</string>
+		<string>calendar.mail</string>
+		<string>youla</string>
+		<string>citydrive</string>
+		<string>sferum</string>
+		<string>my.games</string>
+		<string>samokat</string>
+		<string>vk</string>
+		<string>cloud.mail.ru</string>
+	</array>
 </dict>
 </plist>
