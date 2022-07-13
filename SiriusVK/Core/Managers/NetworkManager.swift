@@ -43,7 +43,7 @@ final class NetworkManager: Manager {
         task.resume()
     }
     
-    func fetchApps(completion: @escaping (Result<VKRequest, Error>) -> ()) {
+    func fetchApps(completion: @escaping (Result<VKResponse, Error>) -> ()) {
         let url = "https://publicstorage.hb.bizmrg.com/sirius/result.json"
         
         fetch(with: url, completion: completion)

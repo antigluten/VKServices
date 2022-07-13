@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Manager {
-    func fetchApps(completion: @escaping (Result<VKRequest, Error>) -> ())
+    func fetchApps(completion: @escaping (Result<VKResponse, Error>) -> ())
 }

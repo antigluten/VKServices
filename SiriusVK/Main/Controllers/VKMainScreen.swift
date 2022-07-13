@@ -77,47 +77,31 @@ class VKMainScreen: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let urlSchemes = [
+            "vk",
+            "mygamesapp",
+            "vk7677811", // sferum
+            "youla",
+            "samokat",
+            "citydrive",
+            "ru.mail.cloud",
+            "vseapteki",
+            "ru.mail.calendar"
+        ]
+        
         let app = apps[indexPath.item]
-    
-        let url = app.link
-        let name = app.name
-        
-        let appUrl = URL(string: "\(name)://")
-        let webUrl = URL(string: url)
-        
         let application = UIApplication.shared
-        
-        /*
-         
-         if let appUrl = appUrl {
-             if application.canOpenURL(appUrl) {
-                 application.open(appUrl)
-             } else {
-                 if let webUrl = webUrl {
-                     application.canOpenURL(webUrl)
-                 }
-             }
-         } else
-         */
-        
-        let appUrl1 = URL(string: "cloud.mail.ru://")
+
+        let appUrl = URL(string: "\(urlSchemes[indexPath.item])://")
         let safariURL = URL(string: app.link)
         
-        let path = "\(app.link.split(separator: "/")[1].split(separator: ".")[0])://"
-        print(path)
-        if let path = URL(string: path), let safariURL = safariURL {
-            print(path, safariURL)
-            if UIApplication.shared.canOpenURL(path){
-                print("trying to open app")
-                UIApplication.shared.open(path)
-            } else {
+        if let appUrl = appUrl, application.canOpenURL(appUrl)  {
+            application.open(appUrl)
+        } else {
+            if let safariURL = safariURL {
                 let safariVC = SFSafariViewController(url: safariURL)
                 present(safariVC, animated: true)
             }
         }
-//        if let webUrl = webUrl {
-//
-//        }
-        
     }
 }

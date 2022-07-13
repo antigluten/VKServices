@@ -21,7 +21,7 @@
 		A7E42865287DFEEB00B49458 /* UIImageView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E42864287DFEEB00B49458 /* UIImageView+Init.swift */; };
 		A7FCEA26287E10EB00A959E0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA25287E10EB00A959E0 /* Manager.swift */; };
 		A7FCEA28287E11D500A959E0 /* VKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA27287E11D500A959E0 /* VKApp.swift */; };
-		A7FCEA2A287E122B00A959E0 /* VKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA29287E122B00A959E0 /* VKRequest.swift */; };
+		A7FCEA2A287E122B00A959E0 /* VKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCEA29287E122B00A959E0 /* VKResponse.swift */; };
 		E5D3D238DE8A97585AA559FF /* Pods_SiriusVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328B4C500E539F7DE4412181 /* Pods_SiriusVK.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		A7E42864287DFEEB00B49458 /* UIImageView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Init.swift"; sourceTree = "<group>"; };
 		A7FCEA25287E10EB00A959E0 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		A7FCEA27287E11D500A959E0 /* VKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKApp.swift; sourceTree = "<group>"; };
-		A7FCEA29287E122B00A959E0 /* VKRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKRequest.swift; sourceTree = "<group>"; };
+		A7FCEA29287E122B00A959E0 /* VKResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +75,31 @@
 				6D330701F7AE7EB2F71887F1 /* Pods-SiriusVK.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A73636C0287ECB60001DF3B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7E4285D287DFC1600B49458 /* VKMainScreen.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A73636C1287ECB66001DF3B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7E42861287DFE8900B49458 /* VKAppRowCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A73636C2287ECB6C001DF3B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7FCEA29287E122B00A959E0 /* VKResponse.swift */,
+				A7FCEA27287E11D500A959E0 /* VKApp.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A74E5781287E0114005F0231 /* Core */ = {
@@ -110,10 +135,9 @@
 		A74E5784287E0145005F0231 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A7E4285D287DFC1600B49458 /* VKMainScreen.swift */,
-				A7E42861287DFE8900B49458 /* VKAppRowCell.swift */,
-				A7FCEA27287E11D500A959E0 /* VKApp.swift */,
-				A7FCEA29287E122B00A959E0 /* VKRequest.swift */,
+				A73636C2287ECB6C001DF3B2 /* Models */,
+				A73636C1287ECB66001DF3B2 /* Views */,
+				A73636C0287ECB60001DF3B2 /* Controllers */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -277,7 +301,7 @@
 				A7E42862287DFE8900B49458 /* VKAppRowCell.swift in Sources */,
 				A74E578A287E075D005F0231 /* UILabel+Init.swift in Sources */,
 				A7E42860287DFC2200B49458 /* NetworkManager.swift in Sources */,
-				A7FCEA2A287E122B00A959E0 /* VKRequest.swift in Sources */,
+				A7FCEA2A287E122B00A959E0 /* VKResponse.swift in Sources */,
 				A74E5786287E0360005F0231 /* UIStackView+Init.swift in Sources */,
 				A74E5788287E03EB005F0231 /* UIView+Layout.swift in Sources */,
 				A7E42865287DFEEB00B49458 /* UIImageView+Init.swift in Sources */,

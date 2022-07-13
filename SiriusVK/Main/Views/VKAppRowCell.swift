@@ -34,9 +34,6 @@ class VKAppRowCell: UITableViewCell {
         verticalStack.axis = .vertical
         verticalStack.distribution = .fill
         
-//        appName.heightAnchor.constraint(equalToConstant: 20).isActive = true
-//        appDescription.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        
         verticalStack.translatesAutoresizingMaskIntoConstraints = false
         
         let stackView = UIStackView(arrangedSubviews: [
@@ -58,15 +55,6 @@ class VKAppRowCell: UITableViewCell {
         
         
         stackView.fillSuperview(padding: .init(top: height, left: 16, bottom: height, right: 50))
-        
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-//        NSLayoutConstraint.activate([
-//            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-//            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-//            stackView.topAnchor.constraint(equalTo: topAnchor),
-//            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
-//        ])
     }
     
     required init?(coder: NSCoder) {

@@ -1,5 +1,5 @@
 //
-//  VKRequest.swift
+//  VKResponse.swift
 //  SiriusVK
 //
 //  Created by Vladimir Gusev on 12.07.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct VKRequest: Codable {
+struct VKResponse: Codable {
     let body: VKBody
     let status: Int
 }
