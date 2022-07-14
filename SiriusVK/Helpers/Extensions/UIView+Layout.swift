@@ -26,6 +26,16 @@ extension UIView {
             trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
         }
     }
+    
+    func constraintWidth(constant: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        widthAnchor.constraint(equalToConstant: constant).isActive = true
+    }
+    
+    func constraintHeight(constant: CGFloat) {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: constant).isActive = true
+    }
 }
 
 

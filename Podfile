@@ -7,5 +7,6 @@ target 'SiriusVK' do
 
   # Pods for SiriusVK
   pod 'SDWebImage'
+  pod 'ReachabilitySwift'
 
 end

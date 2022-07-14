@@ -8,13 +8,16 @@
 import UIKit
 
 class VKAppRowCell: UITableViewCell {
+    // MARK: - Identifier
     static let identifier = "VKAppRowCell"
     
+    // MARK: - Variables
     let appIcon = UIImageView()
     
     let appName = UILabel(text: "App Name", font: .systemFont(ofSize: 18))
     let appDescription = UILabel(text: "VK Bootcamp is a opportunity to show everybody what your's worth is...", font: .systemFont(ofSize: 12), numberOfLines: 2)
     
+    // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -22,10 +25,9 @@ class VKAppRowCell: UITableViewCell {
         
         accessoryType = .disclosureIndicator
         
-        NSLayoutConstraint.activate([
-            appIcon.widthAnchor.constraint(equalToConstant: 64),
-            appIcon.heightAnchor.constraint(equalToConstant: 64)
-        ])
+        // MARK: - Add methods
+        appIcon.constraintWidth(constant: 64)
+        appIcon.constraintHeight(constant: 64)
         
         let verticalStack = UIStackView(subviews: [
             appName, appDescription

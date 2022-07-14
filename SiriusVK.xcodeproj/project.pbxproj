@@ -10,6 +10,7 @@
 		A74E5786287E0360005F0231 /* UIStackView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5785287E0360005F0231 /* UIStackView+Init.swift */; };
 		A74E5788287E03EB005F0231 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5787287E03EB005F0231 /* UIView+Layout.swift */; };
 		A74E578A287E075D005F0231 /* UILabel+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E5789287E075D005F0231 /* UILabel+Init.swift */; };
+		A7875B3A28800F0200A6E5AF /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7875B3928800F0200A6E5AF /* UIViewController+Alert.swift */; };
 		A7B42C4D287F60EF0056C7B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B42C4C287F60EF0056C7B2 /* Constants.swift */; };
 		A7E4284A287DFB9300B49458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E42849287DFB9300B49458 /* AppDelegate.swift */; };
 		A7E4284C287DFB9300B49458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4284B287DFB9300B49458 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 		A74E5785287E0360005F0231 /* UIStackView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Init.swift"; sourceTree = "<group>"; };
 		A74E5787287E03EB005F0231 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		A74E5789287E075D005F0231 /* UILabel+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Init.swift"; sourceTree = "<group>"; };
+		A7875B3928800F0200A6E5AF /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		A7B42C4C287F60EF0056C7B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7E42846287DFB9300B49458 /* SiriusVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriusVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E42849287DFB9300B49458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				A74E5785287E0360005F0231 /* UIStackView+Init.swift */,
 				A74E5787287E03EB005F0231 /* UIView+Layout.swift */,
 				A74E5789287E075D005F0231 /* UILabel+Init.swift */,
+				A7875B3928800F0200A6E5AF /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7875B3A28800F0200A6E5AF /* UIViewController+Alert.swift in Sources */,
 				A7E4284A287DFB9300B49458 /* AppDelegate.swift in Sources */,
 				A7E42862287DFE8900B49458 /* VKAppRowCell.swift in Sources */,
 				A74E578A287E075D005F0231 /* UILabel+Init.swift in Sources */,

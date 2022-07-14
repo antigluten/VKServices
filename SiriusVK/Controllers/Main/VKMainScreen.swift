@@ -8,12 +8,17 @@
 import UIKit
 import SDWebImage
 import SafariServices
+import Reachability
 
 class VKMainScreen: UITableViewController {
+    
+    // MARK: - Variables
+    let reachability = try! Reachability()
     
     var apps = [VKApp]()
     var manager: Manager?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +31,29 @@ class VKMainScreen: UITableViewController {
         tableView.separatorColor = .clear
         tableView.showsVerticalScrollIndicator = false
         
-        fetchData()
+        
+        reachability.whenReachable = { [weak self] _ in
+            guard let self = self else { return }
+            self.fetchData()
+        }
+         
+        reachability.whenUnreachable = { [weak self] _ in
+            guard let self = self else { return }
+            self.alert(title: "Error", text: "The network connection seems to be lost, check the settings")
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        reachability.stopNotifier()
+    }
+    
+    // MARK: - Private
     private func fetchData() {
         guard let manager = manager else {
             return
@@ -46,12 +71,17 @@ class VKMainScreen: UITableViewController {
                     self.tableView.reloadData()
                 }
             case .failure(let error):
-                print(error)
+                DispatchQueue.main.async {
+                    // Refactor in the future
+                    if let error = error as? NetworkManager.NetworkErrors {
+                        self.alert(title: "Error", text: error.localizedDescription)
+                    }
+                }   
             }
         }
-
     }
     
+    // MARK: - TableView Data Source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return apps.count
     }

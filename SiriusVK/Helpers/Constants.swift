@@ -8,10 +8,11 @@
 import Foundation
 
 struct Constants {
+    // MARK: - URLSchemes for apps
     static let appPaths = [
         "vk": "vk://",
         "my": "mygamesapp://",
-        "sferum": "vk7677811://",
+        "sferum": "https://sferum.ru://",
         "youla": "youla://",
         "samokat": "samokat://",
         "citydrive": "citydrive://",
