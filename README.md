@@ -3,7 +3,14 @@
 
 Выполнил: Гусев Владимир
 
-Приложение выполнено полностью кодом с использованием UIKit и сторонней библиотеки SDWebImage для работы с изображениями из сети.
+Рабочик стек приложения:
+* Использование UIKit и AutoLayout
+* Верстка кодом
+* Реализация паттерна MVC
+* Работа с REST API
+* SDWebImage для загрузки и кеширования изображений
+* ReachabilitySwift для проверки соединения
+* Добавлен LaunchScreen
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/53124465/178741451-e7344c46-ce8a-46eb-b1d6-a855cbcce7c3.png" alt="Screenshot 1" width="315">
